@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "vscodevim.vim",
-        "naumovs.color-highlight"
+        "naumovs.color-highlight",
+        "diemasmichiels.emulate"
     ]
 }

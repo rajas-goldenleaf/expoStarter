@@ -1,6 +1,7 @@
 import { useDeviceOrientation } from '@react-native-community/hooks';
 import { useEffect } from 'react';
-import { Dimensions,StatusBar, SafeAreaView, StyleSheet, Text, TouchableNativeFeedback, View } from 'react-native';
+import { Dimensions, StatusBar, SafeAreaView, StyleSheet, Text, TouchableNativeFeedback, View } from 'react-native';
+import "./Button.css"
 
 const screenHeight = Dimensions.get("screen").height;
 const screenWidth = Dimensions.get("screen").width;
@@ -13,20 +14,24 @@ export default function App() {
   }, [orientation])
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View>
-      <Text>Hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium assumenda pariatur repellat! Odit ullam quaerat vero fugit nesciunt, sapiente alias voluptates sequi omnis nulla suscipit, quidem est perspiciatis laudantium.</Text>
-      </View>
-    </SafeAreaView>
+    // <SafeAreaView style={styles.container}>
+    // <SafeAreaView styleName="container">
+    //   <View>
+    //   <Text>Hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium assumenda pariatur repellat! Odit ullam quaerat vero fugit nesciunt, sapiente alias voluptates sequi omnis nulla suscipit, quidem est perspiciatis laudantium.</Text>
+    //   </View>
+    // </SafeAreaView>
+    <View styleName="wrapper">
+      <Text>Foo</Text>
+    </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "white",
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-    marginRight: Platform.OS === "android" ? 5  : 0,
-    marginLeft: Platform.OS === "android" ? 10  : 0,
-  }
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: "white",
+//     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+//     marginRight: Platform.OS === "android" ? 5  : 0,
+//     marginLeft: Platform.OS === "android" ? 10  : 0,
+//   }
+// });
