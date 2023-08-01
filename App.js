@@ -1,8 +1,8 @@
 import { useDeviceOrientation } from '@react-native-community/hooks';
 import { useEffect } from 'react';
-import { Dimensions, StatusBar, StyleSheet, Text, TouchableNativeFeedback, View } from 'react-native';
+import { Dimensions, StatusBar, StyleSheet, Text, TouchableHighlight, TouchableNativeFeedback, View } from 'react-native';
 // import "./Button.module.css"
-// import "./assets/css/dark.css"
+import "./assets/css/dark.css"
 
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -19,7 +19,10 @@ export default function App() {
   return (
     <SafeAreaView styleName="dark">
       <View styleName="tokyo_tm_all_wrap">
-        <Text styleName="my-dashed-class">hello some random name is present in here there are other things that are present here</Text>
+        {/* <Text styleName="my-dashed-class">hello some random name is present in here there are other things that are present here</Text> */}
+        <TouchableHighlight>
+          <Text>hello </Text>
+        </TouchableHighlight>
       </View>
     </SafeAreaView>
   );
