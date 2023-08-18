@@ -1,0 +1,3 @@
+Hello there this is working 
+12
+this will show ammed command
