@@ -2,6 +2,7 @@
     "recommendations": [
         "vscodevim.vim",
         "naumovs.color-highlight",
-        "diemasmichiels.emulate"
+        "diemasmichiels.emulate",
+        "dsznajder.es7-react-js-snippets"
     ]
 }
