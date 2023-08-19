@@ -5,4 +5,3 @@ function addition(a, b) {
 }
 console.log(addition(10, 2));
 
-console.log('this will show ammed command');
